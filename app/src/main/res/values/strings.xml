@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">volleyproject</string>
+    <string name="RECORD">RECORD</string>
+    <string name="DATA">DATA</string>
+    <string name="PROFILE">PROFILE</string>
+    <string name="SHOP">SHOP</string>
+    <string name="SOCIAL">SOCIAL</string>
+    <string name="DATE">DATE</string>
+    <string name="得分">得分</string>
+    <string name="失分">失分</string>
+    <string name="失誤得分">失誤得分</string>
+    <string name="成功">成功</string>
+    <string name="失誤">失誤</string>
+    <string name="無效">無效</string>
+    <string name="發球">發球</string>
+    <string name="接球">接球</string>
+    <string name="舉球">舉球</string>
+    <string name="處理">處理</string>
+    <string name="吊球">吊球</string>
+    <string name="扣球">扣球</string>
+    <string name="攔網">攔網</string>
+    <string name="其他">其他</string>
+    <string name="先發1">先發一</string>
+    <string name="先發2">先發二</string>
+    <string name="先發3">先發三</string>
+    <string name="先發4">先發四</string>
+    <string name="先發5">先發五</string>
+    <string name="先發6">先發六</string>
+    <string name="候補1">候補一</string>
+    <string name="候補2">候補二</string>
+    <string name="recordbutton1">RECORD TEAM PLAY ACTION</string>
+    <string name="recordbutton2">RECORD SPIKE SPOT BALL POINT</string>
+    <string name="choosetext">CHOOSE RECORD FORM</string>
+    <string name="volleymain">VOLLEYMAIN</string>
+</resources>

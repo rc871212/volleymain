@@ -38,7 +38,8 @@
                     android:layout_weight="1"
                     android:background="@drawable/button_shape_behavior"
                     android:text="@string/得分"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="point1"/>
 
                 <Button
                     android:id="@+id/b18"
@@ -48,7 +49,8 @@
                     android:layout_weight="1"
                     android:background="@drawable/button_shape_behavior"
                     android:text="@string/失分"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="point2"/>
 
                 <Button
                     android:id="@+id/b19"
@@ -58,7 +60,8 @@
                     android:layout_weight="1"
                     android:background="@drawable/button_shape_behavior"
                     android:text="@string/失誤得分"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:onClick="point3"/>
             </LinearLayout>
 
             <LinearLayout
@@ -74,7 +77,8 @@
                     android:layout_weight="1"
                     android:background="@drawable/button_shape_behavior"
                     android:text="@string/成功"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="point4"/>
 
                 <Button
                     android:id="@+id/b21"
@@ -84,7 +88,8 @@
                     android:layout_weight="1"
                     android:background="@drawable/button_shape_behavior"
                     android:text="@string/失誤"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="point5"/>
 
                 <Button
                     android:id="@+id/b22"
@@ -94,7 +99,8 @@
                     android:layout_weight="1"
                     android:background="@drawable/button_shape_behavior"
                     android:text="@string/無效"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="point6"/>
             </LinearLayout>
 
         </LinearLayout>
@@ -118,7 +124,8 @@
                     android:layout_height="80dp"
                     android:background="@drawable/button_shape_behavior"
                     android:text="@string/發球"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="action1"/>
 
                 <Button
                     android:id="@+id/b2"
@@ -127,7 +134,8 @@
                     android:layout_height="80dp"
                     android:background="@drawable/button_shape_behavior"
                     android:text="@string/接球"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="action2"/>
             </LinearLayout>
 
             <LinearLayout
@@ -142,7 +150,8 @@
                     android:layout_height="80dp"
                     android:background="@drawable/button_shape_behavior"
                     android:text="@string/舉球"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="action3"/>
 
                 <Button
                     android:id="@+id/b4"
@@ -151,7 +160,8 @@
                     android:layout_height="80dp"
                     android:background="@drawable/button_shape_behavior"
                     android:text="@string/處理"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="action4"/>
             </LinearLayout>
 
             <LinearLayout
@@ -166,7 +176,8 @@
                     android:layout_height="80dp"
                     android:background="@drawable/button_shape_behavior"
                     android:text="@string/吊球"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="action5"/>
 
                 <Button
                     android:id="@+id/b6"
@@ -175,7 +186,8 @@
                     android:layout_height="80dp"
                     android:background="@drawable/button_shape_behavior"
                     android:text="@string/扣球"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="action6"/>
             </LinearLayout>
 
             <LinearLayout
@@ -190,7 +202,9 @@
                     android:layout_height="80dp"
                     android:background="@drawable/button_shape_behavior"
                     android:text="@string/攔網"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="action7"/>
+
 
                 <Button
                     android:id="@+id/b8"
@@ -199,7 +213,8 @@
                     android:layout_height="80dp"
                     android:background="@drawable/button_shape_behavior"
                     android:text="@string/其他"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="action8"/>
             </LinearLayout>
 
         </LinearLayout>
@@ -217,13 +232,14 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/b9"
+                    android:id="@+id/person1"
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="100dp"
                     android:layout_height="80dp"
                     android:background="@drawable/button_shape_behavior"
                     android:text="@string/先發1"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="person1"/>
 
                 <Button
                     android:id="@+id/b10"
@@ -232,7 +248,8 @@
                     android:layout_height="80dp"
                     android:background="@drawable/button_shape_behavior"
                     android:text="@string/先發2"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="person2"/>
             </LinearLayout>
 
             <LinearLayout
@@ -247,7 +264,8 @@
                     android:layout_height="80dp"
                     android:background="@drawable/button_shape_behavior"
                     android:text="@string/先發3"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="person3"/>
 
                 <Button
                     android:id="@+id/b12"
@@ -256,7 +274,8 @@
                     android:layout_height="80dp"
                     android:background="@drawable/button_shape_behavior"
                     android:text="@string/先發4"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="person4"/>
             </LinearLayout>
 
             <LinearLayout
@@ -271,7 +290,8 @@
                     android:layout_height="80dp"
                     android:background="@drawable/button_shape_behavior"
                     android:text="@string/先發5"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="person5"/>
 
                 <Button
                     android:id="@+id/b14"
@@ -280,7 +300,8 @@
                     android:layout_height="80dp"
                     android:background="@drawable/button_shape_behavior"
                     android:text="@string/先發6"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="person6"/>
             </LinearLayout>
 
             <LinearLayout
@@ -295,7 +316,8 @@
                     android:layout_height="80dp"
                     android:background="@drawable/button_shape_behavior"
                     android:text="@string/候補1"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:onClick="person7"/>
 
                 <Button
                     android:id="@+id/b16"
@@ -304,7 +326,9 @@
                     android:layout_height="80dp"
                     android:background="@drawable/button_shape_behavior"
                     android:text="@string/候補2"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+
+                    android:onClick="finish"/>
             </LinearLayout>
 
         </LinearLayout>

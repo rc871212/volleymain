@@ -22,6 +22,8 @@ public class FirstPage extends AppCompatActivity {
                 openRecordActivity();
             }
         });
+
+
     }
 
     public void openRecordActivity(){

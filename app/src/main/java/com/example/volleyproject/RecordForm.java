@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+
+
 public class RecordForm extends AppCompatActivity {
     private Button button;
     @Override
@@ -22,10 +24,16 @@ public class RecordForm extends AppCompatActivity {
                 openRecordActivity();
             }
         });
+
+
+
     }
+
 
     public void openRecordActivity(){
         Intent intent = new Intent(this, DataInput.class);
         startActivity(intent);
     }
+
+
 }

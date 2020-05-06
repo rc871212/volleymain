@@ -25,7 +25,7 @@ public class RecordForm extends AppCompatActivity {
     }
 
     public void openRecordActivity(){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, DataInput.class);
         startActivity(intent);
     }
 }

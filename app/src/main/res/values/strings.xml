@@ -37,4 +37,5 @@
     <string name="recordbutton2">RECORD SPIKE SPOT BALL POINT</string>
     <string name="choosetext">CHOOSE RECORD FORM</string>
     <string name="volleymain">VOLLEYMAIN</string>
+    <string name="exit">離開比賽</string>
 </resources>

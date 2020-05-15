@@ -3,6 +3,7 @@ package com.example.volleyproject;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -20,6 +21,7 @@ import android.os.Environment;
 import android.os.StrictMode;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 
 import org.json.*;
 import org.json.JSONException;
@@ -36,7 +38,8 @@ public class MainActivity extends AppCompatActivity {
 
     JSONArray JArray = new JSONArray();
     JSONObject Jobject = new JSONObject();
-
+    TextView text1 ;
+    TextView text2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,6 +54,13 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportActionBar().hide(); //隱藏title
         setContentView(R.layout.activity_main);
+
+
+        text1 = findViewById(R.id.textView4);
+        text2 = findViewById(R.id.textView5);
+        //TextView text1 =(TextView)findViewById(R.id.textView4);
+        //TextView text2 =(TextView)findViewById(R.id.textView5);
+
 
 
     }
@@ -68,6 +78,8 @@ public class MainActivity extends AppCompatActivity {
         int requestCode = 200;
         requestPermissions(permissions, requestCode);
     }
+    int a=0;
+    int b=0;
 
     /**
      * 選手
@@ -125,10 +137,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void finish(View v) throws  IOException {
+    public void person8(View v) throws  JSONException {
 
-        getString(JArray.toString());
-        //Jobject.put("person", "候補二");
+        Jobject.put("person", "候補二");
 
     }
 
@@ -197,7 +208,8 @@ public class MainActivity extends AppCompatActivity {
         Jobject.put("point", "得分");
 
         JArray.put(Jobject);
-
+        a +=1;
+        text1.setText(Integer.toString(a));
 
         Log.e("JsonArray給我出來", JArray.toString());
     }
@@ -209,7 +221,8 @@ public class MainActivity extends AppCompatActivity {
         Jobject.put("point", "失分");
 
         JArray.put(Jobject);
-
+        b +=1;
+        text2.setText(Integer.toString(b));
 
         Log.e("JsonArray給我出來", JArray.toString());
     }
@@ -256,6 +269,14 @@ public class MainActivity extends AppCompatActivity {
         Log.e("JsonArray給我出來", JArray.toString());
     }
 
+    public void finish(View v) throws  IOException {
+
+        getString(JArray.toString());
+        Intent intent= new Intent(MainActivity.this , FirstPage.class);
+        startActivity(intent);
+
+    }
+
 
 
 
@@ -270,13 +291,23 @@ public class MainActivity extends AppCompatActivity {
             //String path = Environment.getExternalStorageDirectory().getPath();
             //File hi = new File(path + "/" + "test11.json");
 
-            String path = "/sdcard/DCIM/test.json";
-            //寫檔
-            File hi = new File(path);
-            FileOutputStream test = new FileOutputStream(hi);
-            test.write(array.getBytes());
+            // 取得前一個Activity傳過來的資料
+            Bundle bundle = this.getIntent().getExtras();
+            // 將取得的Bundle資料設定
+            if (bundle != null) {
+                String date = bundle.getString("Date");
+                String rival = bundle.getString("Rival");
 
-            test.close();
+                String path = "/sdcard/DCIM";
+                //寫檔
+                File hi = new File(path+ "/" + date +rival+".json");
+                FileOutputStream test = new FileOutputStream(hi);
+                test.write(array.getBytes());
+
+                test.close();
+            }
+
+
 
         } catch (Exception e) {
 

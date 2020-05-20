@@ -46,7 +46,9 @@
             app:errorEnabled="true"
             android:layout_gravity="center_horizontal">
 
+
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/mail_edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/mail"
@@ -63,11 +65,14 @@
             app:passwordToggleEnabled="true"
             android:layout_gravity="center_horizontal">
 
+
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/password"
-                android:inputType="textPassword"/>
+                android:inputType="textPassword"
+                />
 
         </com.google.android.material.textfield.TextInputLayout>
 

@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "125970830610",
+    "firebase_url": "https://vollymain-1b211.firebaseio.com",
+    "project_id": "vollymain-1b211",
+    "storage_bucket": "vollymain-1b211.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125970830610:android:b4a4efc4d54d1a27a90fcb",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125970830610-keaptkhel0cmg0vnr0erssr5kurd921g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6a-wBfyddlVyUgVjNo-gtt8Ddlfj4Arw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125970830610-keaptkhel0cmg0vnr0erssr5kurd921g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125970830610:android:0f652676527e982ea90fcb",
+        "android_client_info": {
+          "package_name": "com.example.volleyproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125970830610-keaptkhel0cmg0vnr0erssr5kurd921g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6a-wBfyddlVyUgVjNo-gtt8Ddlfj4Arw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125970830610-keaptkhel0cmg0vnr0erssr5kurd921g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

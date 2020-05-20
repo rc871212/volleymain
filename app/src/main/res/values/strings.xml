@@ -65,4 +65,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="plz_input_accout">請輸入信箱</string>
+    <string name="plz_input_pw">請輸入密碼</string>
+    <string name="register_success">註冊成功</string>
+    <string name="login_success">登入成功</string>
 </resources>

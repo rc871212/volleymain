@@ -26,8 +26,8 @@ public class AddPlayer extends AppCompatActivity {
                 openBag();
             }
         });
-        textInputName = findViewById(R.id.textName);
-        textInputId = findViewById(R.id.textId);
+        textInputName = findViewById(R.id.text_input_Id);
+        textInputId = findViewById(R.id.text_input_Name);
         create = findViewById(R.id.create);
         create.setOnClickListener(new View.OnClickListener() {
             @Override

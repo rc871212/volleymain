@@ -10,14 +10,22 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#E0F2F1"
+        android:background="#E0F7FA"
         app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/volleyball"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="140dp"/>
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="50dp"
             android:gravity="center"
             android:text="@string/volleymain"
             android:textColor="@android:color/black"
@@ -29,11 +37,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="70dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,36 +51,25 @@
             <Button
                 android:id="@+id/button"
                 style="?android:attr/borderlessButtonStyle"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/button_shape01"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_shape_recordform"
                 android:text="@string/RECORD"
-                android:textSize="18sp" />
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/button2"
                 style="?android:attr/borderlessButtonStyle"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/button_shape01"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_shape_recordform"
                 android:text="@string/DATA"
-                android:textSize="18sp" />
+                android:textSize="20sp" />
 
-            <Button
-                android:id="@+id/button3"
-                style="?android:attr/borderlessButtonStyle"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/button_shape01"
-                android:text="@string/PROFILE"
-                android:textSize="18sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -87,33 +80,22 @@
             <Button
                 android:id="@+id/button4"
                 style="?android:attr/borderlessButtonStyle"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginRight="10dp"
-                android:background="@drawable/button_shape01"
-                android:text="@string/SHOP"
-                android:textSize="18sp" />
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button_shape_recordform"
+                android:text="@string/BAG"
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/button5"
                 style="?android:attr/borderlessButtonStyle"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginEnd="10dp"
-                android:background="@drawable/button_shape01"
-                android:text="@string/SOCIAL"
-                android:textSize="18sp" />
-
-            <Button
-                android:id="@+id/button6"
-                style="?android:attr/borderlessButtonStyle"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:background="@drawable/button_shape01"
-                android:text="@string/DATE"
-                android:textSize="18sp" />
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/button_shape_recordform"
+                android:text="@string/SHOP"
+                android:textSize="20sp" />
 
         </LinearLayout>
     </LinearLayout>

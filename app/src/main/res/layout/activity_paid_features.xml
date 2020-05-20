@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaidFeatures">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E0F7FA">
+
+        <LinearLayout
+            android:layout_width="409dp"
+            android:layout_height="729dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button3"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shape_recordform"
+                android:width="250dp"
+                android:height="100dp"
+                android:layout_marginBottom="90dp"
+                android:text="@string/feature1"
+                android:textSize="25dp"/>
+
+            <Button
+                android:id="@+id/button6"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shape_recordform"
+                android:width="250dp"
+                android:height="100dp"
+                android:text="@string/feature2"
+                android:textSize="25dp"/>
+
+            <Button
+                android:id="@+id/button9"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shape_recordform"
+                android:width="250dp"
+                android:height="100dp"
+                android:layout_marginTop="90dp"
+                android:text="@string/feature3"
+                android:textSize="25dp"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

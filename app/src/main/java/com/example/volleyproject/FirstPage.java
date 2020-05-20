@@ -9,6 +9,8 @@ import android.widget.Button;
 
 public class FirstPage extends AppCompatActivity {
     private Button button;
+    private Button button2;
+    private Button button5;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,12 +24,35 @@ public class FirstPage extends AppCompatActivity {
                 openRecordActivity();
             }
         });
+        button2 = findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                openView();
+            }
+        });
+        button5 = findViewById(R.id.button5);
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                openPaidFeatures();
+            }
+        });
 
 
     }
 
     public void openRecordActivity(){
         Intent intent = new Intent(this, RecordForm.class);
+        startActivity(intent);
+    }
+    public void openView(){
+        Intent intent = new Intent(this, view.class);
+        startActivity(intent);
+    }
+
+    public void openPaidFeatures(){
+        Intent intent = new Intent(this, PaidFeatures.class);
         startActivity(intent);
     }
 }

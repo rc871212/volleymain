@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.volleyproject">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -12,6 +13,11 @@
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="q">
+        <activity android:name=".Process"></activity>
+        <activity android:name=".Register" />
+        <activity android:name=".SignIn">
         android:theme="@style/AppTheme">
         <activity android:name=".AddPlayer"></activity>
         <activity android:name=".Bag" />
@@ -25,10 +31,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Analysis" />
+        <activity android:name=".ChooseForm" />
+        <activity android:name=".view" />
+        <activity android:name=".PaidFeatures" />
+        <activity android:name=".DataInput" />
+        <activity android:name=".RecordForm" />
+        <activity android:name=".FirstPage" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:screenOrientation="fullSensor" />
+            android:screenOrientation="sensorLandscape" />
     </application>
 
 </manifest>

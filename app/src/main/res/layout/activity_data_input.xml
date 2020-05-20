@@ -9,7 +9,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#C8E6C9"
+        android:background="#E0F7FA"
         android:duplicateParentState="false">
 
         <TextView
@@ -20,7 +20,7 @@
             android:layout_marginTop="70dp"
             android:text="@string/輸入比賽資料"
             android:textColor="@android:color/black"
-            android:textSize="31sp" />
+            android:textSize="40sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -81,7 +81,6 @@
                 android:layout_height="60dp"
                 android:layout_marginTop="90dp"
                 android:background="@drawable/button_shape_recordform"
-                android:onClick="confirmInput"
                 android:text="@string/下一步"
                 android:textSize="20sp" />
 

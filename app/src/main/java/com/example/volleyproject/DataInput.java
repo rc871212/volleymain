@@ -26,6 +26,12 @@ public class DataInput extends AppCompatActivity {
         getSupportActionBar().hide(); //隱藏title
 
         button = findViewById(R.id.next);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                openRecordActivity();
+            }
+        });
         textInputDate = findViewById(R.id.text_input_date);
         textInputRival = findViewById(R.id.text_input_rival);
         textInputSet = findViewById(R.id.text_input_set);
@@ -72,24 +78,20 @@ public class DataInput extends AppCompatActivity {
 
     public void confirmInput(View V)
     {
-        if(!validateDate() | !validateRival() | !validateSet() ) {
-            return;
-        }
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v){
-                openRecordActivity();
-            }
-        });
     }
 
     public void openRecordActivity() {
-        Intent intent = new Intent(this, MainActivity.class);
-        Bundle bundle = new Bundle();
-        bundle.putString("Date", textInputDate.getEditText().getText().toString().trim());
-        bundle.putString("Rival", textInputRival.getEditText().getText().toString().trim());
-        intent.putExtras(bundle);
-        startActivity(intent);
+        if(!validateDate() | !validateRival() | !validateSet() ) {
+            return;
+        }
+        else {
+            Intent intent = new Intent(this, MainActivity.class);
+            Bundle bundle = new Bundle();
+            bundle.putString("Date", textInputDate.getEditText().getText().toString().trim());
+            bundle.putString("Rival", textInputRival.getEditText().getText().toString().trim());
+            intent.putExtras(bundle);
+            startActivity(intent);
+        }
     }
 }

@@ -15,6 +15,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:targetApi="q">
+        <activity android:name=".Process"></activity>
+        <activity android:name=".Register" />
+        <activity android:name=".SignIn">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Analysis" />
+        <activity android:name=".ChooseForm" />
+        <activity android:name=".view" />
+        <activity android:name=".PaidFeatures" />
         <activity android:name=".DataInput" />
         <activity android:name=".RecordForm" />
         <activity android:name=".FirstPage" />

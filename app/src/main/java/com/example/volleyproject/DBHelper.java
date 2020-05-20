@@ -8,15 +8,19 @@ import androidx.annotation.Nullable;
 
 public class DBHelper extends SQLiteOpenHelper {
     private final static int _DBVersion = 1; //<-- 版本
-    private final static String _DBName = "SampleList.db";	//<-- db name
-    private final static String _TableName = "MySample"; //<-- table name
-    public DBHelper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
-        super(context, _DBName, factory, _DBVersion);
+    private final static String _DBName = "PlayerData";	//<-- db name
+    private final static String _TableName = "PlayerData"; //<-- table name
+    public DBHelper(Context context) {
+        super(context, _DBName, null, _DBVersion);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-
+         String SQL = "CREATE TABLE IF NOT EXISTS " + _TableName + "( " +
+                "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                "name TEXT"+
+                ");";
+        db.execSQL(SQL);
     }
 
     @Override

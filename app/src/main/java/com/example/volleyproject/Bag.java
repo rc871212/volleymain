@@ -43,10 +43,27 @@ public class Bag extends AppCompatActivity {
         player p=new player(id,name);
         players.add(p);
         }
-
-
+        getNewPlayerData();
 
     }
+
+    private void getNewPlayerData() {
+        try
+        {
+            Bundle bundle = this.getIntent().getExtras();
+            if (bundle != null)
+            {
+                int pId=bundle.getInt("id");
+                String pName=bundle.getString("Name");
+                players.add(pId,pName);
+            }
+        }
+        catch (Exception e)
+        {
+
+        }
+    }
+
     public void openAddPlayer() {
         Intent intent = new Intent(this, AddPlayer.class);
         startActivity(intent);

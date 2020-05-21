@@ -7,18 +7,7 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.PermissionChecker;
 
-import android.Manifest;
-import android.annotation.TargetApi;
-import android.content.Context;
-import android.content.pm.PackageManager;
-import android.os.Build;
-import android.os.Bundle;
-
-import android.os.Environment;
-import android.os.StrictMode;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -27,19 +16,24 @@ import org.json.*;
 import org.json.JSONException;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.OutputStreamWriter;
-import java.io.Writer;
+
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 
 
 public class MainActivity extends AppCompatActivity {
 
     JSONArray JArray = new JSONArray();
     JSONObject Jobject = new JSONObject();
+    JSONObject Jobject2 = new JSONObject();
     TextView text1 ;
     TextView text2;
+    private DatabaseReference mDatabase;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -271,7 +265,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void finish(View v) throws  IOException {
 
+
         getString(JArray.toString());
+
+
         Intent intent= new Intent(MainActivity.this , FirstPage.class);
         startActivity(intent);
 
@@ -297,6 +294,7 @@ public class MainActivity extends AppCompatActivity {
             if (bundle != null) {
                 String date = bundle.getString("Date");
                 String rival = bundle.getString("Rival");
+                String set = bundle.getString("Set");
 
                 String path = "/sdcard/DCIM";
                 //寫檔
@@ -305,6 +303,12 @@ public class MainActivity extends AppCompatActivity {
                 test.write(array.getBytes());
 
                 test.close();
+
+                DatabaseReference myRef = FirebaseDatabase.getInstance()
+                        .getReferenceFromUrl("https://vollymain-1b211.firebaseio.com/");
+
+                myRef.child(set).setValue(JArray.toString());
+
             }
 
 

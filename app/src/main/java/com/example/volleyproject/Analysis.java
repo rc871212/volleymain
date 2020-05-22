@@ -14,6 +14,8 @@ import java.util.Random;
 public class Analysis extends AppCompatActivity {
     private Button another;
     private Button first;
+
+
     TextView text1 ;
     TextView text2;
     TextView text3 ;
@@ -28,8 +30,9 @@ public class Analysis extends AppCompatActivity {
         setContentView(R.layout.activity_analysis);
         getSupportActionBar().hide(); //隱藏title
 
+
         text1 = findViewById(R.id.data1);
-        text2 = findViewById(R.id.data2);
+        text2= findViewById(R.id.data2);
         text3 = findViewById(R.id.data3);
         text4 = findViewById(R.id.data4);
         text5 = findViewById(R.id.data5);
@@ -41,7 +44,7 @@ public class Analysis extends AppCompatActivity {
         text3.setText(rand.nextInt(100)+ 1+"%");
         text4.setText(rand.nextInt(100)+ 1+"%");
         text5.setText(rand.nextInt(100)+ 1+"%");
-        text6.setText(rand.nextInt(4)+ 1);
+        text6.setText(rand.nextInt(5)+"次");
 
         another = findViewById(R.id.another);
         another.setOnClickListener(new View.OnClickListener() {

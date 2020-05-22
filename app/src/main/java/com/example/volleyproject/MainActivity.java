@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     JSONArray JArray = new JSONArray();
     JSONObject Jobject = new JSONObject();
-    JSONObject Jobject2 = new JSONObject();
+
     TextView text1 ;
     TextView text2;
     private DatabaseReference mDatabase;

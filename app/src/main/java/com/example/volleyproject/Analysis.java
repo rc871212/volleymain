@@ -36,12 +36,12 @@ public class Analysis extends AppCompatActivity {
         text6 = findViewById(R.id.data6);
 
         Random rand = new Random();
-        text1.setText(rand.nextInt(100)+ 1+"%");
-        text2.setText(rand.nextInt(100)+ 1+"%");
-        text3.setText(rand.nextInt(100)+ 1+"%");
-        text4.setText(rand.nextInt(100)+ 1+"%");
-        text5.setText(rand.nextInt(100)+ 1+"%");
-        text6.setText(rand.nextInt(4)+ 1);
+        text1.setText(Math.round(10000*rand.nextFloat())/(float)100+"%");
+        text2.setText(Math.round(10000*rand.nextFloat())/(float)100+"%");
+        text3.setText(Math.round(10000*rand.nextFloat())/(float)100+"%");
+        text4.setText(Math.round(10000*rand.nextFloat())/(float)100+"%");
+        text5.setText(Math.round(10000*rand.nextFloat())/(float)100+"%");
+        text6.setText(rand.nextInt(9)+ 1+"次");
 
         another = findViewById(R.id.another);
         another.setOnClickListener(new View.OnClickListener() {

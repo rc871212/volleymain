@@ -9,7 +9,7 @@
     <string name="失誤得分">失誤得分</string>
     <string name="成功">成功</string>
     <string name="失誤">失誤</string>
-    <string name="無效">無效</string>
+    <string name="犯規">犯規</string>
     <string name="發球">發球</string>
     <string name="接球">接球</string>
     <string name="舉球">舉球</string>
@@ -24,6 +24,7 @@
     <string name="先發4">先發四</string>
     <string name="先發5">先發五</string>
     <string name="先發6">先發六</string>
+    <string name= "二傳">二傳</string>
     <string name="候補1">候補一</string>
     <string name="候補2">候補二</string>
     <string name="輸入比賽資料">輸入比賽資料</string>

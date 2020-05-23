@@ -19,13 +19,6 @@ public class AddPlayer extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_player);
-        Button create = findViewById(R.id.create);
-        create.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openBag();
-            }
-        });
         textInputName = findViewById(R.id.text_input_Id);
         textInputId = findViewById(R.id.text_input_Name);
         create = findViewById(R.id.create);

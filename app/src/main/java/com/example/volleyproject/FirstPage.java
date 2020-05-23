@@ -10,6 +10,7 @@ import android.widget.Button;
 public class FirstPage extends AppCompatActivity {
     private Button button;
     private Button button2;
+    private Button button4;
     private Button button5;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +39,13 @@ public class FirstPage extends AppCompatActivity {
                 openPaidFeatures();
             }
         });
-
+        button4 = findViewById(R.id.button4);
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                openBag();
+            }
+        });
 
     }
 
@@ -53,6 +60,11 @@ public class FirstPage extends AppCompatActivity {
 
     public void openPaidFeatures(){
         Intent intent = new Intent(this, PaidFeatures.class);
+        startActivity(intent);
+    }
+
+    public void openBag(){
+        Intent intent = new Intent(this, Bag.class);
         startActivity(intent);
     }
 }

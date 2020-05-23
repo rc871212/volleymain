@@ -90,6 +90,7 @@ public class DataInput extends AppCompatActivity {
             Bundle bundle = new Bundle();
             bundle.putString("Date", textInputDate.getEditText().getText().toString().trim());
             bundle.putString("Rival", textInputRival.getEditText().getText().toString().trim());
+            bundle.putString("Set", textInputSet.getEditText().getText().toString().trim());
             intent.putExtras(bundle);
             startActivity(intent);
         }

@@ -63,6 +63,10 @@
     <string name="information">輸入基本資料</string>
     <string name="name">姓名</string>
     <string name="confirm">密碼確認</string>
+    <string name="輸入球員姓名">輸入球員姓名</string>
+    <string name="輸入球員號碼">輸入球員號碼</string>
+    <string name="球員基本資訊">球員基本資訊</string>
+    <string name="新增">新增</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

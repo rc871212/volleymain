@@ -33,6 +33,7 @@ public class Bag extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bag);
+        getSupportActionBar().hide(); //隱藏title
 
         button = findViewById(R.id.add);
         bag0 = findViewById(R.id.bag0);
